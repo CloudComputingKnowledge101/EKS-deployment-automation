@@ -47,9 +47,9 @@ resource "aws_route_table" "eks_public_rt" {
     gateway_id = aws_internet_gateway.eks_igw.id
   }
 
-  tags = {
-    Name = "eks-public-rt"
-  }
+    tags = {
+      Name = "eks-public-rt"
+    }
 }
 
 resource "aws_route_table_association" "rt_assoc_a" {
